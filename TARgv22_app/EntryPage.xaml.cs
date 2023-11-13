@@ -49,7 +49,7 @@ namespace TARgv22_app
         int i = 0, k=0;
         private void Editor_TextChanged(object sender, TextChangedEventArgs e)
         {
-            char key=e.NewTextValue?.LastOrDefault() ?? '\0'; //?Count()
+            char key = e.NewTextValue?.LastOrDefault() ?? ' '; //?Count()
             if (key=='A')
             {
                 i++;
