@@ -53,6 +53,7 @@ namespace TARgv22_app
         {
             label.Text=String.Format("Oli valitud: {0:F1}", e.NewValue);
             label.FontSize=e.NewValue;
+            slider.Value = e.NewValue;
             //label.Rotation=e.NewValue;
         }
 
@@ -60,6 +61,7 @@ namespace TARgv22_app
         {
             label.Text = String.Format("Oli valitud: {0:F1}", e.NewValue);
             label.FontSize = e.NewValue;
+            stepper.Value = e.NewValue;
             //label.Rotation = e.NewValue;
         }
     }
