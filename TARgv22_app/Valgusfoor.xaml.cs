@@ -64,9 +64,10 @@ namespace TARgv22_app
         bool startstop = false;
         private void Tap_Tapped(object sender, EventArgs e)
         {
+            Frame frame = sender as Frame;
             if (startstop)
             {
-                Frame frame = sender as Frame;
+                frame.BackgroundColor = colors[frame.TabIndex];
                 frame.Content = new Label { Text = reaktion[frame.TabIndex] };
             }
         }
@@ -78,7 +79,7 @@ namespace TARgv22_app
                 startstop = true;
                 for (int i = 0; i < 3; i++)
                 {
-                    frames[i].BackgroundColor = colors[i];
+                    //frames[i].BackgroundColor = colors[i];
                     frames[i].Content = new Label { Text = "Tee oma valik" };
                 }
             }
